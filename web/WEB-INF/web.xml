@@ -12,7 +12,7 @@
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>controller.LoginServlet</servlet-class>
-     
+        
         <init-param>
             <param-name>user</param-name>
             <param-value>abc</param-value>
