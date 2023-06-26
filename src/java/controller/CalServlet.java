@@ -16,7 +16,7 @@ import jakarta.servlet.http.HttpServletResponse;
  *
  * @author admin
  */
-@WebServlet(name = "CalServlet", urlPatterns = {"/calservlet"})
+@WebServlet(name = "CalServlet1", urlPatterns = {"/calservlet"})
 public class CalServlet extends HttpServlet {
 
     /**

@@ -10,11 +10,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <form action="LoginServlet" method="post">
-            User: <input type="text" name="user"><br>
-            Password: <input type="password" name="password"><br>  
-            <input type="submit" value="Login">
-            Result: <input type="number" name="result" value="">
+        <form action="geoservlet" method="post">
+            Please choose your favourite geometry:
+            <div>
+                <select name="geo">
+                    <option value="circle">Circle</option>
+                    <option value="triangle">Triangle</option>
+                    <option value="rectangle">Rectangle</option>
+                </select>
+            </div>
+            <input type="submit" value="Choose">
         </form>
     </body>
 </html>
