@@ -69,8 +69,10 @@ public class GeoServlet extends HttpServlet {
             case "circle":
                 src = "img/circle.png";
                 break;
+            case "square":
+                src = "img/square.png";
+                break;
             default:
-                src = "img/rectangle.webp";
                 break;
         }
         processRequest(request, response, src);

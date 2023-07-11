@@ -16,7 +16,7 @@ import jakarta.servlet.http.HttpServletResponse;
  *
  * @author tramy
  */
-@WebServlet(name = "WelcomeServlet", urlPatterns = {"/WelcomeServlet"})
+@WebServlet(name = "WelcomeServlet", urlPatterns = {"/welcomeServlet"})
 public class WelcomeServlet extends HttpServlet {
 
     /**

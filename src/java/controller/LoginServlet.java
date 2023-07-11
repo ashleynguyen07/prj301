@@ -18,7 +18,7 @@ import jakarta.servlet.http.HttpServletResponse;
  *
  * @author tramy
  */
-@WebServlet(name = "LoginServlet", urlPatterns = {"/LoginServlet"})
+@WebServlet(name = "LoginServlet", urlPatterns = {"/loginServlet"})
 public class LoginServlet extends HttpServlet {
 
     /**
@@ -40,15 +40,12 @@ public class LoginServlet extends HttpServlet {
 
             String user = request.getParameter("user");
             String password = request.getParameter("password");
-            String url = "";
 
             if (user.equalsIgnoreCase(param1) && password.equalsIgnoreCase(param2)) {
-                url = "/WelcomeServlet";
+                response.sendRedirect("welcomeServlet");
             } else {
-                url = "/login.html";
-            }
-            RequestDispatcher rd = getServletContext().getRequestDispatcher(url);
-            rd.forward(request, response);
+                response.sendRedirect("login.html");
+            }          
         }
     }
 
